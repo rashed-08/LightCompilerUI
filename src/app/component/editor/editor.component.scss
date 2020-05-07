@@ -1,0 +1,17 @@
+._form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    padding-top: 10px;
+    & .form-control {
+        width: 600px;
+    }
+    & .form_name {
+        text-align: center;
+    }
+}
+
+.output_text {
+    padding: 5px !important;
+}
