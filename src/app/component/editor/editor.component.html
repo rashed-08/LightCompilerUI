@@ -48,9 +48,12 @@
                 </div>
             </div>                    
         </form> 
-        <div>
-            <pre class="output_text"></pre>
+        <div class="output-box" [hidden]="outputList == null">
+            <h4>Output</h4>
+            <hr>
+            <pre *ngFor="let output of outputList">{{output}}</pre>
         </div>
     </div>
     </div>
 </div>
+
