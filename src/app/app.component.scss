@@ -1,3 +1,13 @@
+html, body {
+    height: 100%;
+    overflow: scroll;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
 li {
     text-decoration: none;
     list-style: none;
@@ -5,4 +15,34 @@ li {
         color: #000000;
         cursor: pointer;
     }
+}
+
+form {
+    & a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+// .footer {
+//     display: flex;
+//     justify-content: center;
+//     flex: 0 0 auto;
+//     margin: 1em;
+//     padding: 1em;
+//     justify-items: flex-end;
+//     align-self: flex-end;
+// }
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2.5em;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-top: 5px;
 }

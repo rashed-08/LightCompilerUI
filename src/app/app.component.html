@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
   <div class="container">
-    <a class="navbar-brand" href="#">Container</a>
+    <a class="navbar-brand" routerLink="/editor">LightCompiler</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,17 +8,23 @@
     <div class="collapse navbar-collapse" id="navbarsExample07">
       <ul class="navbar-nav mr-auto">
        <li class="nav-item">
-            <a class="nav-link" href="#">sample code</a>
+            <a class="nav-link" routerLink="/editor">sample code</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">new code</a>
+            <a class="nav-link" routerLink="/editor">new code</a>
           </li>
       </ul>
       <form class="form-inline my-2 my-md-0">
-       <a style="color: rgb(235, 230, 206);" href="#">sign in</a>
+       <a style="color: darkgray" href="#">sign in</a>
       </form>
     </div>
   </div>
 </nav>
 
 <router-outlet></router-outlet>
+
+<footer class="footer">
+  <div class="container">
+      <span>All Rights Reserved 2020 @Rashedul Islam</span>
+  </div>
+</footer>

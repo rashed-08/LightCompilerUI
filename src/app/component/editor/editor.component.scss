@@ -12,6 +12,17 @@
     }
 }
 
+.output-box {
+    padding: 10px;
+    border: 1px solid lightblue;
+    width: 600px !important;
+    overflow: scroll;
+}
+
 .output_text {
     padding: 5px !important;
+}
+
+.container {
+    overflow: auto;
 }

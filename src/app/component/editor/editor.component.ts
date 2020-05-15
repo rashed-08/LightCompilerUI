@@ -10,6 +10,7 @@ import { EditorService } from '../../services/editor.service';
 export class EditorComponent implements OnInit {
 
   editor: Editor = new Editor();
+  public outputList: string[];
 
   constructor(private editorService: EditorService) { }
 
@@ -18,7 +19,7 @@ export class EditorComponent implements OnInit {
 
   public onSubmit() {
     console.log(this.editor);
-    this.editorService.submitSolution(this.editor).subscribe(data => console.log(data), error => console.log(error));
+    this.editorService.submitSolution(this.editor).subscribe(data => this.outputList = data, error => console.log(error));
   }
 
   changedLanguage(event: any) {
